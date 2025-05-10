@@ -17,3 +17,7 @@ const teacher: Teacher = {
   salary: 50000, // add another new attribute
 };
 
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
