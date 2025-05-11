@@ -54,4 +54,14 @@ export function executeWork(employee: DirectorInterface | TeacherInterface) {
         return employee.workTeacherTasks()
     }
 }
+
+type Subjects = "Math" | "History";
+
+export function teachClass(todayClass: Subjects) {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }else {
+        return "Teaching History";
+    }
+}
   
